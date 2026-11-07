@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #101D2B;
+    --color-ivory: #F7F5F0;
+    --color-gold: #C5A46D;
+    --color-gold-hover: #b3925a;
+    --color-charcoal: #20252B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Ethiopic', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom utility classes */
+.text-gold {
+  color: #C5A46D;
+}
+
+.bg-gold {
+  background-color: #C5A46D;
+}
+
+.border-gold {
+  border-color: #C5A46D;
+}
+
+.bg-navy {
+  background-color: #101D2B;
+}
+
+.bg-charcoal {
+  background-color: #20252B;
+}
+
+.bg-ivory {
+  background-color: #F7F5F0;
+}
+
+.text-navy {
+  color: #101D2B;
+}
+
+/* Glassmorphism & subtle scrims */
+.glass-header {
+  background-color: rgba(16, 29, 43, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(32, 37, 43, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 164, 109, 0.18);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FBF8F2 0%, #E3CDA4 50%, #C5A46D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
