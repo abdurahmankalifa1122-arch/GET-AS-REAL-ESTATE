@@ -2,6 +2,7 @@ import React from 'react';
 import { ShieldCheck, Award, Building, ArrowUpRight } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { IMAGES } from '../assets/images';
 
 interface AboutSectionProps {
   language: Language;
@@ -20,7 +21,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ language, onExploreP
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-lg overflow-hidden border border-[#C5A46D]/30 shadow-2xl group">
               <img
-                src="/src/assets/images/property_development_craft_1794040690458.jpg"
+                src={IMAGES.propertyCraft}
                 alt="GET-AS Real Estate construction engineers and site development in Addis Ababa"
                 className="w-full h-[460px] object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"

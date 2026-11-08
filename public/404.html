@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GET-AS REAL ESTATE</title>
+    <script>
+      // Single Page App redirect for GitHub Pages
+      // Redirects 404 paths back to the repository base with a query or hash
+      (function() {
+        var segmentCount = 1;
+        var l = window.location;
+        l.replace(
+          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+          l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      })();
+    </script>
+  </head>
+  <body style="background-color: #101D2B; color: #F7F5F0; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <p>Redirecting to GET-AS REAL ESTATE...</p>
+  </body>
+</html>

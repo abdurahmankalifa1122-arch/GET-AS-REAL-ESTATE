@@ -2,6 +2,7 @@ import React from 'react';
 import { Home, Layers, CheckCircle2, ShieldCheck, ArrowRight, AlertCircle } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { IMAGES } from '../assets/images';
 
 interface Summit72SectionProps {
   language: Language;
@@ -80,7 +81,7 @@ export const Summit72Section: React.FC<Summit72SectionProps> = ({ language, onIn
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-lg overflow-hidden border border-[#C5A46D]/30 shadow-2xl group">
               <img
-                src="/src/assets/images/summit72_luxury_villas_1794040688825.jpg"
+                src={IMAGES.summit72Villas}
                 alt="Summit 72 Luxury G+1 Villas Compound in Addis Ababa"
                 className="w-full h-[520px] object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"

@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, Check } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { IMAGES } from '../assets/images';
 
 interface ServicesSectionProps {
   language: Language;
@@ -9,9 +10,9 @@ interface ServicesSectionProps {
 }
 
 const SERVICE_IMAGES: Record<string, string> = {
-  dev: '/src/assets/images/property_development_craft_1794040690458.jpg',
-  sales: '/src/assets/images/wing1_type1_interior_1794040690798.jpg',
-  rental: '/src/assets/images/addis_commercial_building_1794040689554.jpg',
+  dev: IMAGES.propertyCraft,
+  sales: IMAGES.wing1Interior,
+  rental: IMAGES.commercialBuilding,
 };
 
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ language, onSelectService }) => {

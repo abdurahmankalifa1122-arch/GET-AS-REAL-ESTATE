@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, ArrowDown, MapPin, Compass } from 'lucide-react';
 import { Language } from '../types';
 import { translations } from '../data/translations';
+import { IMAGES } from '../assets/images';
 
 interface HeroProps {
   language: Language;
@@ -22,21 +23,21 @@ const SLIDES: SlideItem[] = [
     id: 1,
     titleKey: 'Luxury Apartments',
     locationKey: 'Kazanchis, Addis Ababa',
-    image: '/src/assets/images/hero_kazanchis_luxury_apartment_1794040687104.jpg',
+    image: IMAGES.heroKazanchis,
     alt: 'Luxury architectural high-rise apartment tower in Kazanchis, Addis Ababa',
   },
   {
     id: 2,
     titleKey: 'Family Villas',
     locationKey: 'Summit 72, Addis Ababa',
-    image: '/src/assets/images/summit72_luxury_villas_1794040688825.jpg',
+    image: IMAGES.summit72Villas,
     alt: 'Master-planned G+1 luxury family villas in Summit 72, Addis Ababa',
   },
   {
     id: 3,
     titleKey: 'Commercial Buildings',
     locationKey: 'Addis Ababa Central District',
-    image: '/src/assets/images/addis_commercial_building_1794040689554.jpg',
+    image: IMAGES.commercialBuilding,
     alt: 'Prestigious commercial Grade-A tower in Addis Ababa business center',
   },
 ];

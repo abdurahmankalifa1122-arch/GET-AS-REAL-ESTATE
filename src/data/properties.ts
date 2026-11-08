@@ -1,4 +1,5 @@
 import { Property, SisterCompany } from '../types';
+import { IMAGES } from '../assets/images';
 
 export const PROPERTIES_DATA: Property[] = [
   {
@@ -24,11 +25,11 @@ export const PROPERTIES_DATA: Property[] = [
     kitchen: 1,
     balconies: 2,
     featured: true,
-    image: '/src/assets/images/wing1_type1_interior_1794040690798.jpg',
+    image: IMAGES.wing1Interior,
     gallery: [
-      '/src/assets/images/wing1_type1_interior_1794040690798.jpg',
-      '/src/assets/images/hero_kazanchis_luxury_apartment_1794040687104.jpg',
-      '/src/assets/images/property_development_craft_1794040690458.jpg',
+      IMAGES.wing1Interior,
+      IMAGES.heroKazanchis,
+      IMAGES.propertyCraft,
     ],
     description: 'Wing 1 Type 1 represents GET-AS Real Estate’s premier apartment residence located in the heart of Kazanchis, Addis Ababa. Designed with floor-to-ceiling panoramic glass, dual private balconies overlooking the capital, two luxurious bedrooms, modern fitted kitchen, and two bespoke bathrooms crafted with international finishes.',
     descriptionAm: 'ዊንግ 1 ታይፕ 1 በካዛንቺስ አዲስ አበባ እምብርት የሚገኝ የጌት-አስ ሪል እስቴት ተመራጭ የቅንጦት አፓርታማ ነው። ባለ ሁለት ሰፊ መኝታ ቤቶች፣ ሁለት ዘመናዊ መታጠቢያዎች፣ የተሟላ ወጥ ቤት እና የከተማዋን ውበት የሚያሳዩ ሁለት ሰፊ በረንዳዎች ያሉት ድንቅ መኖሪያ ነው።',
@@ -74,11 +75,11 @@ export const PROPERTIES_DATA: Property[] = [
     kitchen: 1,
     balconies: 3,
     featured: true,
-    image: '/src/assets/images/summit72_luxury_villas_1794040688825.jpg',
+    image: IMAGES.summit72Villas,
     gallery: [
-      '/src/assets/images/summit72_luxury_villas_1794040688825.jpg',
-      '/src/assets/images/property_development_craft_1794040690458.jpg',
-      '/src/assets/images/wing1_type1_interior_1794040690798.jpg',
+      IMAGES.summit72Villas,
+      IMAGES.propertyCraft,
+      IMAGES.wing1Interior,
     ],
     description: 'Part of GET-AS Real Estate’s landmark 40,000 sqm residential development in Summit 72, comprising 32 luxury G+1 villas. Each villa delivers private landscaped garden grounds, double-height foyer, spacious multi-generational family living spaces, master ensuite with dressing room, and secure compound gates.',
     descriptionAm: 'በሰሚት 72 በግምት 40,000 ካሬ ሜትር ስፋት ባለው የጌት-አስ ሪል እስቴት ግቢ ውስጥ ከሚገኙት 32 የቅንጦት ጂ+1 ቪላዎች አንዱ። የግል አረንጓዴ ግቢ፣ ሰፊ የመኖሪያ ክፍሎች፣ ማስተር መኝታ ቤት፣ የግል መኪና ማቆሚያ እና የተሟላ የመንደር ደህንነት ያካተተ ነው።',
@@ -122,11 +123,11 @@ export const PROPERTIES_DATA: Property[] = [
     kitchen: 1,
     balconies: 1,
     featured: true,
-    image: '/src/assets/images/addis_commercial_building_1794040689554.jpg',
+    image: IMAGES.commercialBuilding,
     gallery: [
-      '/src/assets/images/addis_commercial_building_1794040689554.jpg',
-      '/src/assets/images/hero_kazanchis_luxury_apartment_1794040687104.jpg',
-      '/src/assets/images/property_development_craft_1794040690458.jpg',
+      IMAGES.commercialBuilding,
+      IMAGES.heroKazanchis,
+      IMAGES.propertyCraft,
     ],
     description: 'High-visibility modern commercial and executive office facilities located in Addis Ababa’s central diplomatic and financial zone. Built with energy-efficient glass curtain facades, advanced climate infrastructure, fiber optic backbone, and spacious underground parking.',
     descriptionAm: 'በአዲስ አበባ ዲፕሎማቲክ እና የንግድ ማዕከል ውስጥ የሚገኝ ዘመናዊ የንግድና የቢሮ ሕንፃ። በዘመናዊ የመስተዋት ገጽታ፣ የፋይበር ኢንተርኔት መስመር፣ የተሟላ አየር ማቀዝቀዣና ሰፊ የመኪና ማቆሚያ የተገነባ።',
